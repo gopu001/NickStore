@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--HEADER SECTION-->
+       <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <title>All Products - Nick's Store</title>
+	   <link rel="stylesheet" href="style.css">
+	   <link rel="preconnect" href="https://fonts.googleapis.com">
+	   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+	   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<a href="Index.html"><img src="file:///F:/NickStore/Images/Logo.png" width="75px"></a><!--LOGO-->
+		</div>
+    <nav>
+		<ul id="MenuItems">
+			<li><a href="">Home</a></li>
+			<li><a href="">Product</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Account</a></li>
+		</ul>
+	</nav>
+	<img src="file:///F:/NickStore/Images/shopping-cart-sketch-icon-vector-13295053-removebg-preview.png" width="45px" height="45px"><!--CART IMAGE-->
+    <img src="file:///F:/NickStore/Images/menu.png" class="menu-icon" onclick="menutoggle()">
+</div>
+</div>
+
+<!----------------------Cart Item Details---------------------->
+
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="file:///F:/NickStore/Images/product-17.png">
+                    <div>
+                        <p>Rare Rabbit Jacket</p>
+                        <small>Price: Rs.1699</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.1699</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="file:///F:/NickStore/Images/product-15.png">
+                    <div>
+                        <p>Titan Water-Resistance Watch</p>
+                        <small>Price: Rs.1499</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.1499</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="file:///F:/NickStore/Images/product-9.png">
+                    <div>
+                        <p>Puma White Sneakers</p>
+                        <small>Price: Rs.5999</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.5999</td>
+        </tr>
+    </table>
+
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>Rs.2000</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>Rs.200</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>Rs.2200</td>
+        </tr>
+    </table>
+</div>
+
+</div>
+
+<!----------------------Footer---------------------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our App</h3>
+				<p>Download App for Android and ios mobile phone.</p>
+			   <div class="app-logo">
+				<img src="file:///F:/NickStore/Images/play-store.png">
+				<img src="file:///F:/NickStore/Images/app-store.png">
+			   </div>
+			</div>
+			<div class="footer-col-2">
+			    <img src="file:///F:/NickStore/Images/Logo.png">
+				<p>Our purpose is to provide customers with a comprehensive and enjoyable shopping experience 
+				   for a wide range of clothing products. .</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Keep In Touch</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>Youtube</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyrigth 2021 - Easy Tutorials</p>
+	</div>
+</div>
+<!----------------------JS for toggle menu---------------------->
+ <script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+            MenuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+</body>
+</html>
